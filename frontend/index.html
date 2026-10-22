@@ -1,11 +1,35 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detector Inteligente de SPAM</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <h1>Detector Inteligente de SPAM</h1>
-    <p>Aplicación de Inteligencia Artificial</p>
+
+    <div class="contenedor">
+        <h1>Detector Inteligente de SPAM</h1>
+
+        <p>
+            Ingresa un mensaje para identificar si
+            corresponde a SPAM o NO SPAM mediante
+            Inteligencia Artificial.
+        </p>
+
+        <textarea
+            id="mensaje"
+            rows="6"
+            placeholder="Escribe aquí el mensaje que deseas analizar..."
+        ></textarea>
+
+        <button id="botonAnalizar" type="button">
+            Analizar mensaje
+        </button>
+
+        <div id="resultado" aria-live="polite"></div>
+    </div>
+
 </body>
 </html>
