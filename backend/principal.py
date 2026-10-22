@@ -8,8 +8,8 @@ from pydantic import BaseModel, Field
 
 # Configurar las rutas del proyecto
 ruta_principal = Path(__file__).resolve().parent.parent
-ruta_modelo = ruta_principal / "modelos" / "modelos_spam.joblib"
-ruta_vectorizador = ruta_principal / "modelos" / "vectorizador.joblib"
+ruta_modelo = ruta_principal / "modelos" / "modelo_spam.joblib"
+ruta_vectorizador = ruta_principal / "modelos" / "vectorizador_tfidf.joblib"
 
 # Cargar el modelo y el vectorizador
 modelo_principal = joblib.load(ruta_modelo)
