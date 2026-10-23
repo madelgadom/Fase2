@@ -1,4 +1,7 @@
 
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+
 from pathlib import Path
 
 import joblib
@@ -83,3 +86,19 @@ def predecir(datos: MensajeEntrada):
         "clasificacion": str(prediccion),
         "confianza": confianza
     }
+
+
+# Configuración de la interfaz web
+ruta_frontend = ruta_principal / "frontend"
+
+aplicacion.mount(
+    "/archivos",
+    StaticFiles(directory=str(ruta_frontend)),
+    name="archivos"
+)
+
+@aplicacion.get("/aplicacion", include_in_schema=False)
+def mostrar_aplicacion():
+    return FileResponse(
+        ruta_frontend / "index.html"
+    )
