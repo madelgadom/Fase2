@@ -159,4 +159,4 @@ Por otra parte, las pruebas funcionales confirmaron que FastAPI recibe y procesa
 
 También verificamos la comunicación entre frontend y backend y la ejecución de la aplicación dentro de Docker.
 
-En conjunto, estos resultados demuestran que nuestra solución cumple con los objetivos académicos de integración técnica, contenerización y validación funcional. No obstante, identificamos oportunidades de mejora relacionadas con la sensibilidad del modelo, la evaluación de otros idiomas y la ampliación de las pruebas ante condiciones más diversas.# Validación y pruebas del Detector Inteligente de SPAM
+En conjunto, estos resultados demuestran que nuestra solución cumple con los objetivos académicos de integración técnica, contenerización y validación funcional. No obstante, identificamos oportunidades de mejora relacionadas con la sensibilidad del modelo, la evaluación de otros idiomas y la ampliación de las pruebas ante condiciones más diversas.
