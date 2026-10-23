@@ -1,0 +1,34 @@
+
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# Archivos de Git
+.git/
+.gitignore
+
+# Archivos de desarrollo
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# Archivos temporales
+*.log
+*.tmp
+*.bak
+
+# Variables de entorno y credenciales
+.env
+.env.*
+!.env.example
+
+# Documentación temporal
+.DS_Store
+Thumbs.db
