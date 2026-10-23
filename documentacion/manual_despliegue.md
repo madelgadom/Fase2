@@ -90,7 +90,7 @@ Por su parte, la carpeta `modelos` contiene los archivos generados durante el en
 
 Finalmente, el archivo `Dockerfile` establece las instrucciones para construir la imagen, mientras que `.dockerignore` define los archivos que deben excluirse del contexto de construcción.
 
-[Imagen 2. Captura del repositorio Fase2 en GitHub, mostrando las carpetas backend, frontend y modelos, junto con Dockerfile, .dockerignore y README.md.]
+![Estructura del repositorio GitHub](imagenes/repositorio.png)
 
 ## 6. Clonación del repositorio
 
