@@ -186,9 +186,7 @@ docker images
 
 En nuestra implementación comprobamos que la imagen `detector-spam-ia:1.0` se construyó correctamente.
 
-[Imagen 5. Captura de la Terminal mostrando la finalización exitosa del comando docker build.]
-
-[Imagen 6. Captura de la Terminal ejecutando docker images, donde aparezca la imagen detector-spam-ia con la etiqueta 1.0.]
+![Construccion Docker](imagenes/console-docker-1.png)
 
 ## 9. Ejecución del contenedor Docker
 
@@ -216,7 +214,7 @@ docker ps
 
 Este comando muestra los contenedores activos, permitiéndonos comprobar que nuestra aplicación continúa ejecutándose.
 
-[Imagen 7. Captura de la Terminal mostrando docker ps, con el contenedor detector-spam en estado Up y el puerto 8080 publicado.]
+![Ejecucion Docker](imagenes/console-docker-2.png)
 
 ## 10. Acceso a la aplicación web
 
@@ -236,11 +234,7 @@ Si el mensaje se clasifica como SPAM, se muestra un cuadro rojo de advertencia. 
 
 Adicionalmente, se presenta el porcentaje de confianza estimado por el modelo.
 
-[Imagen 8. Captura de la aplicación web en http://localhost:8080/aplicacion mostrando el formulario para ingresar mensajes.]
-
-[Imagen 9. Captura del frontend mostrando un mensaje clasificado como SPAM dentro del cuadro rojo, junto con el porcentaje de confianza.]
-
-[Imagen 10. Captura del frontend mostrando un mensaje clasificado como NO SPAM dentro del cuadro verde, junto con el porcentaje de confianza.]
+![Ejecucion Frontal](imagenes/main-front-screen.png)
 
 ## 11. Validación de la API REST mediante Swagger UI
 
@@ -271,9 +265,9 @@ Durante nuestras pruebas obtuvimos una respuesta HTTP 200 y una clasificación S
 
 Esto demuestra que la API recibe correctamente la información, utiliza el modelo entrenado y devuelve una respuesta estructurada.
 
-[Imagen 11. Captura de Swagger UI mostrando los endpoints GET / y POST /predecir.]
+![Endpoints GET y POST](imagenes/main-test-menu.png)
 
-[Imagen 12. Captura de Swagger UI mostrando la solicitud POST /predecir, el código HTTP 200 y la respuesta JSON con la clasificación SPAM y confianza de 97.24 %.]
+![Spam Test](imagenes/spam-test.png)
 
 ## 12. Validación funcional y casos extremos
 
@@ -298,9 +292,9 @@ En particular, las pruebas con mensajes vacíos y textos superiores a 5,000 cara
 
 Asimismo, comprobamos que el modelo puede procesar mensajes con caracteres especiales y clasificar mensajes ambiguos, aunque esto no garantiza que todas las predicciones sean correctas.
 
-[Imagen 13. Evidencia de Swagger UI mostrando el error HTTP 422 al enviar un mensaje vacío.]
+![Prueba mensaje vacio](imagenes/empty-test.png)
 
-[Imagen 14. Evidencia de Swagger UI mostrando el error HTTP 422 al superar el límite de 5,000 caracteres.]
+![Prueba limite caracteres](imagenes/long-text-test.png)
 
 ## 13. Comandos para administrar el contenedor
 
